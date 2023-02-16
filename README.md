@@ -11,7 +11,7 @@ cd apps
 git clone https://github.com/jameelio/health-frontend.git
 ``
 ``
-cp .env.example .env
+cp ./health-frontend/.env.example ./health-frontend/.env
 ``
 
 ``
@@ -19,7 +19,7 @@ git clone https://github.com/jameelio/health-backend.git
 ``
 
 ``
-cp .env.example .env
+cp ./health-backend/.env.example ./health-backend/.env
 ``
 
 Navigate back to root 
