@@ -1,0 +1,37 @@
+version: '3.7'
+services:
+  health-frontend:
+    container_name: health-frontend-app
+    build:
+      context: ./apps/health-frontend/
+      dockerfile: Dockerfile
+    working_dir: /usr/src/app/health-frontend-app
+    restart: always
+    env_file:
+      - .env
+    # volumes:
+    #   - ./health-frontend-app:/usr/src/app/health-frontend-app
+    #   - /usr/src/app/health-frontend-app/node_modules
+    ports:
+      - 8080:80
+    networks:
+      - app_network
+  health-backend:
+    container_name: health-backend-api
+    build:
+      context: ./apps/health-backend/
+      dockerfile: Dockerfile
+    working_dir: /usr/src/app/health-backend-api
+    restart: always
+    env_file:
+      - .env
+    # volumes:
+    #   - ./health-backend-api:/usr/src/app/health-backend-api
+    #   - /usr/src/app/health-backend-api/node_modules
+    ports:
+      - 8081:3000
+    networks:
+      - app_network
+networks:
+  app_network:
+    external: true
