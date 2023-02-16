@@ -10,10 +10,19 @@ cd apps
 ``
 git clone https://github.com/jameelio/health-frontend.git
 ``
+``
+cp .env.example .env
+``
 
 ``
 git clone https://github.com/jameelio/health-backend.git
 ``
+
+``
+cp .env.example .env
+``
+
+Navigate back to root 
 
 
 
