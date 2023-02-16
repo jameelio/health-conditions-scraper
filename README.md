@@ -1,12 +1,21 @@
 # Backend and Frontend Health API
 
 
-# Create Network
+### Clone Applications
+
+``
+cd apps
+``
+
+``
+git clone https://github.com/jameelio/health-frontend.git
+``
+
+``
+git clone https://github.com/jameelio/health-backend.git
+``
 
 
-docker-compose build
-
-docker-compose up
 
 ### Apps 
 
